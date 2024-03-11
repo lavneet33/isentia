@@ -35,9 +35,9 @@ Latent Semantic Analysis, or LSA, is one of the foundational techniques in topic
 ## Topic Modelling using Gensim's LDA
 One of the drawbacks of LSA is that though it is really fast, its effectiveness in finding good topics is not great. One assumption that LSA makes is that the topics are orthogonal to each other, while Latent Dirichlet Allocation (LDA) relaxes this assumption. Moreover, LDA generalizes the way the documents are generated and this modelling assumption leads to better topics. Let us first understand intuitively how LDA works.
 ## Choosing the Number of Topics for LDA
-## Choosing the Number of Topics for LDA
 Run LDA on your corpus with different numbers of topics and see if word distribution per topic looks sensible. Gensim also provides a Hierarchical Dirichlet Process (HDP) class [5]. HDP is similar to LDA, except it seeks to learn the correct number of topics from the data; that is, you don’t need to provide a fixed number of topics. 
 ## Creating a LDA Model
+## Evaluation Metrics of Topics will be achieved using Coherence Score and Perplexity along with visualisation of Top Topics using WordCloud.
 ## Converting Topics to Feature Vectors
 The ultimate goal is not only to see how this performs in a train/test CV split of the current data, but whether the topics have hit on something fundamental that translates to unseen test data in the future
 ## Converting Unsupervised Output to a Supervised Problem by Training a Supervised Classifier and validating on Test Dataset
