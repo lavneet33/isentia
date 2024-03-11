@@ -1,4 +1,4 @@
-##ISentia Machine Learning Challenge
+## ISentia Machine Learning Challenge
 
 ## Problem Description
 
@@ -10,7 +10,7 @@ Topics can be defined as "repeating patterns of  terms that co-occur within a co
 We have a dataset consisting of news articles, and our task is to assign topics to these articles. We will design a simple tf-idf vectorisation and Lemmatisation followed by Latesnt Sementic Anlaysis (LSA) and LDA(Latent Dirichlet Allocation) to lead to better Topics. 
 Evaluation Metrics of Topics will be achieved using Coherence Score and Perplexity along with visualisation of Top Topics using WordCloud.
 
-#Project Plan
+# Project Plan
 
 The project steps for applying topic modeling to the news headlines dataset can be as follow:
 
