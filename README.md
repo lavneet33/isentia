@@ -43,6 +43,9 @@ The ultimate goal is not only to see how this performs in a train/test CV split 
 ## Converting Unsupervised Output to a Supervised Problem by Training a Supervised Classifier and validating on Test Dataset
 ## Performance Metrics of Supervised Classfier as F1 Scores, Recall, ROC 
 
+# Challenge Limitations
+I am not able to extract labels as annotated labels from text file, due to Regex Expressions. Need more time to extract so as to train Supervised classifier where X= news_df.col and Y = news.df.Target. Currently, I managed to convert LDA feature vectors into X but unable to extract labels from file.
+Optimisation can be done to make LDA Topics more accurate for Top 5 or Top 10
 
 
 
