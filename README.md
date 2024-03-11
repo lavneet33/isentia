@@ -51,6 +51,20 @@ Optimisation can be done to make LDA Topics more accurate for Top 5 or Top 10
 Please upload train.txt in your Google Drive if you runing Notebook in Google Colab or Jupyter Notebook. Run first line of code to mount google drive and define path as /content/Isentia
 There might be some packages required for NLTK, please download as mentioned in script.
 
+## How do you evaluate the accuracy and correctness of your model(s)?
+Evaluation metrics like Coherence Score and Perplexity need to be optimised to improve accuracy. For supervised learning on LDA feature vectors, standard machine learning metrics like F1 Scores, Recall and ROC with MSE and AUC need to be evaluated.
+
+## What could you do to improve the accuracy of your model?
+I have not tested using Spacy and Bigrams models, but can be compared with LDA and LSI. Generative Neural Networks has been heavily used as Generative AI as more accurate models then LDA, but K-Fold validation is required if improving the accuracy of current model. Manual validation can be done using stratified sampling on generated Topics to match Manual Annotation of Topics.
+
+## How would you serve your model(s) in production?
+There are process set up in Cloud Services, like Airflow and MLFlow for making and running models in production. Suggest to run Beta version with less data in prod, and aquire weights of model to marry up with test or production data so as to save time on resources and faster performance. Also, dump or pickle the model prediction using Postman APIs so can be easy callout from any SAAS services.
+
+## - Imagine that there are future requirements that ask you to add a new class/topic/pattern? What would re-training look like? Are there any concerns? How would you avoid these concerns?
+There is always model drift where new data adds with different patterns and trends, thus starting point is always to set up data pipeline to check data distribution and data quality. If there any delta, then re rerun the training model to capture model drift and validate with delta difference in performance accuriacies.
+
+
+
 
 
 
