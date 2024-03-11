@@ -20,6 +20,30 @@ The project steps for applying topic modeling to the news headlines dataset can 
 4. Topic Interpretation: After identifying the main topics, the next step is interpreting the topics and assigning human-readable labels to them. It includes analyzing the top words and phrases associated with each topic and identifying the main themes and trends.
 5. Evaluation: The final step involves evaluating the performance of the topic modeling algorithms. Then, comparing them based on metrics such as coherence score and perplexity. Identifying the limitations and challenges of the topic modeling approach and proposing possible solutions.
 
+Current Model Process Defined as:
+
+## Loading the data
+## Clean the Data
+Transforming text into something an algorithm can digest it a complicated process. We cannot feed the data as it is, some preprocessing needs to be done. In this task we will be doing some preprocessing to convert our data in a form that we can feed our model with.
+## Handling the Stop-words
+Text may contain stop words like ‘the’, ‘is’, ‘are’. Stop words can be filtered from the text to be processed. There is no universal list of stop words in nlp research, however the nltk module contains a list of stop words. We will remove these stopwords in this task.
+## Lemmatization
+## TF-IDF Vectorization
+Apart from Count vectorizer an alternative to calculate word frequencies , and by far the most popular method is called TF-IDF. This is an acronym than stands for “Term Frequency – Inverse Document” Frequency which are the components of the resulting scores assigned to each word.
+##Topic modelling using LSA
+Latent Semantic Analysis, or LSA, is one of the foundational techniques in topic modeling. The core idea is to take a matrix of what we have — documents and terms — and decompose it into a separate document-topic matrix and a topic-term matrix.
+## Topic Modelling using Gensim's LDA
+One of the drawbacks of LSA is that though it is really fast, its effectiveness in finding good topics is not great. One assumption that LSA makes is that the topics are orthogonal to each other, while Latent Dirichlet Allocation (LDA) relaxes this assumption. Moreover, LDA generalizes the way the documents are generated and this modelling assumption leads to better topics. Let us first understand intuitively how LDA works.
+## Choosing the Number of Topics for LDA
+## Choosing the Number of Topics for LDA
+Run LDA on your corpus with different numbers of topics and see if word distribution per topic looks sensible. Gensim also provides a Hierarchical Dirichlet Process (HDP) class [5]. HDP is similar to LDA, except it seeks to learn the correct number of topics from the data; that is, you don’t need to provide a fixed number of topics. 
+## Creating a LDA Model
+## Converting Topics to Feature Vectors
+The ultimate goal is not only to see how this performs in a train/test CV split of the current data, but whether the topics have hit on something fundamental that translates to unseen test data in the future
+## Converting Unsupervised Output to a Supervised Problem by Training a Supervised Classifier and validating on Test Dataset
+## Performance Metrics of Supervised Classfier as F1 Scores, Recall, ROC 
+
+
 
 
 
