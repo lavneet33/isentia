@@ -47,6 +47,9 @@ The ultimate goal is not only to see how this performs in a train/test CV split 
 I am not able to extract labels as annotated labels from text file, due to Regex Expressions. Need more time to extract so as to train Supervised classifier where X= news_df.col and Y = news.df.Target. Currently, I managed to convert LDA feature vectors into X but unable to extract labels from file.
 Optimisation can be done to make LDA Topics more accurate for Top 5 or Top 10
 
+# Run Process
+Please upload train.txt in your Google Drive if you runing Notebook in Google Colab or Jupyter Notebook. Run first line of code to mount google drive and define path as /content/Isentia
+There might be some packages required for NLTK, please download as mentioned in script.
 
 
 
